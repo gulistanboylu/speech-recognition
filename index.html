@@ -21,9 +21,11 @@
 
   recognition.addEventListener('result', e => {
       console.log(e);
+      const transcript = Array.from(e.result);
   })
 
 
+  recognition.start();   
 
 </script>
 
